@@ -3,8 +3,15 @@
 @tailwind components;
 @tailwind utilities;
 :root {
-  --primary-color: mediumslateblue;
+  --primary-color: #2563eb;
+  --d: 2500ms;
+  --angle: 90deg;
+  --gradX: 100%;
+  --gradY: 50%;
+  --c1: rgba(168, 239, 255, 1);
+  --c2: rgba(168, 239, 255, 0.1);
 }
+
 
 * {
   box-sizing: border-box;
@@ -21,9 +28,9 @@
 } */
 
 .card {
-  width: 640px;
+  width: auto;
   position: relative;
-  background-color: rgb(16 16 16);
+  /* background-color: rgb(16 16 16); */
   border: 1px solid rgb(255 255 255 / 5%);
   border-radius: 1.5rem;
   padding: 1rem;
@@ -32,9 +39,9 @@
 .card:after {  
   content: "";
   height: 70px;
-  width: 1px;  
+  width: 2px;  
   position: absolute;  
-  left: -1px;
+  left: -2px;
   top: 65%;
   transition: top, opacity;
   transition-duration: 600ms;
@@ -56,6 +63,7 @@
   top: 25%;
   opacity: 1;
 }
+
 
 .card-content {  
   display: flex;
@@ -113,62 +121,6 @@
   }
 }
 
-/* -- Links -- */
-
-#links {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  z-index: 10;
-  padding: 1rem;
-}
-
-.meta-link {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.meta-link > :is(span, a) {
-  font-family: "Rubik", sans-serif;
-  font-size: 0.9rem;
-  color: white;
-}
-
-.meta-link > .label {
-  text-align: right;
-}
-
-.meta-link > a {
-  text-decoration: none;
-  outline: none;
-}
-
-.meta-link > a.source {
-  color: rgb(94, 106, 210);
-}
-
-.meta-link > a:is(:hover, :focus) > i {
-  color: white;  
-}
-
-.meta-link > a.youtube {
-  color: rgb(239, 83, 80);
-}
-
-.meta-link > a.youtube > i {
-  padding-top: 0.2rem; 
-}
-
-.meta-link > a > i {
-  height: 1rem;
-  line-height: 1rem;
-}
-
-
 
 
 .gradient-border {
@@ -203,11 +155,28 @@
 
 
 
+/* .box {
+	--angle: 0deg;
+	width:auto;
+	height:auto;
+	border: 1px solid;
+  border-radius: 20px;
+	border-image: linear-gradient(var(--angle), green, yellow) 1;
+  animation: 10s rotate linear infinite;
 
+}
 
+@keyframes rotate {
+	to {
+		--angle: 360deg;
+	}
+}
 
-
-
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+} */
 
 
 
