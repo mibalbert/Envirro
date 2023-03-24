@@ -1,5 +1,9 @@
 "use client";
 
+// Powering cities with clean energy with fundamental phisics and engineering.
+
+// PUT MAPS HERE WITH 3d buildings and the system .
+
 import Link from "next/link";
 import { useState } from "react";
 
@@ -9,12 +13,13 @@ export default function Header() {
     // <header class="relative z-50 w-full flex-none text-sm font-semibold leading-6 text-slate-900">
 
     <header>
-      <nav className="w-full relative z-20">
+      <nav className="w-full bg-transparent relative z-20">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div>
             <div className="flex items-center justify-between py-2 md:py-3 md:block">
               <Link href="#">
-                <h2 className="text-2xl text-slate-800 font-bold">NEXT JS</h2>
+                {/* <Image src="/.png" width={100} height={100} /> */}
+                <h2 className="text-2xl text-slate-800 font-bold">Envierro</h2>
               </Link>
               <div className="md:hidden">
                 <button
@@ -26,7 +31,7 @@ export default function Header() {
                       xmlns="http://www.w3.org/2000/svg"
                       className="w-6 h-6 text-slate-800"
                       viewBox="0 0 20 20"
-                      fill="currentColor"
+                      fillRule="currentColor"
                     >
                       <path
                         fillRule="evenodd"
@@ -65,13 +70,13 @@ export default function Header() {
                   <Link href="/">Home</Link>
                 </li>
                 <li className="text-slate-800">
-                  <Link href="/blogs">Blogs</Link>
+                  <Link href="/blogs">Blog</Link>
                 </li>
                 <li className="text-slate-800">
-                  <Link href="/about">About US</Link>
+                  <Link href="/about">About</Link>
                 </li>
                 <li className="text-slate-800">
-                  <Link href="/contact">Contact US</Link>
+                  <Link href="/contact">Contact</Link>
                 </li>
                 <li>
                   <div class="hidden  lg:flex lg:items-center lg:border-l lg:border-slate-900/15 ">
@@ -80,7 +85,7 @@ export default function Header() {
                       href="/all-access"
                     >
                       <span>
-                        Get all-access <span aria-hidden="true">→</span>
+                        Contact Sales <span aria-hidden="true">→</span>
                       </span>
                     </Link>
                   </div>
