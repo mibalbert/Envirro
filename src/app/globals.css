@@ -151,6 +151,7 @@
 }
 
 
+
 .tubeBlue::before{
   content: "";
   height: 360px;
@@ -185,7 +186,18 @@
 
 
 
-
+/* To be put inside the tube elem */
+/* #tubeHead{
+  
+  width: 150%;
+  height: 150%;
+  background-color: #f00;
+  border-radius: 100%;
+  top: 80%;
+  left: -25%;
+  right: 0;
+  position: relative;
+} */
 
 
 

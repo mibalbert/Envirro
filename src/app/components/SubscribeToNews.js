@@ -9,9 +9,9 @@ export default function SubscribeToNews() {
           Keep yourself updated with Envirro
         </h3>
         <p class="mb-5 text-sm font-medium text-gray-500 dark:text-gray-300">
-          Do you want to get notified when a new component is added to Flowbite?
-          Sign up for our newsletter and you`ll be among the first to find out
-          about new features, components, versions, and tools.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+          condimentum, nisl ut aliquam lacinia, nunc sem lacinia tortor, nec
+          ultrices nunc lorem eget massa. Sed euismod, nisl ut aliquam lacinia.
         </p>
       </div>
       <div className="col-span-2">
