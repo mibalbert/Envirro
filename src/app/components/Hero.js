@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import MySvgComponent from "./cube";
 import SubscribeToNews from "./SubscribeToNews";
 
 export default function HeroTextAndGif() {
